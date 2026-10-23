@@ -1,0 +1,12 @@
+/* Part 16: library folders, MCQ and Important points */
+.fgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+.fcard { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 4px; min-height: 104px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.fcard:active { background: var(--raise); }
+.fcard.sp { border-color: var(--line2); background: linear-gradient(160deg, rgba(var(--ac-rgb), .10), transparent 70%), var(--panel); }
+.fic { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: color-mix(in srgb, var(--c) 18%, transparent); color: var(--c); margin-bottom: 6px; }
+.fic svg { width: 21px; height: 21px; }
+.fnm { font: 700 15px/1.25 var(--fd); overflow-wrap: anywhere; }
+.tag { display: inline-block; font: 700 11px var(--fu); padding: 2px 7px; border-radius: 7px; background: rgba(138, 147, 166, .18); color: var(--muted); }
+.tag.ok { background: rgba(60, 200, 120, .16); color: #3cc878; }
+.tag.ai { background: rgba(245, 185, 66, .18); color: #f5b942; }
+.tag.no { background: rgba(255, 93, 122, .16); color: #ff5d7a; }
