@@ -1,0 +1,15 @@
+/* Part 17: iPad and wide screens, web-app install */
+@media (min-width: 700px) { :root { --maxw: 760px; } }
+@media (min-width: 1100px) { :root { --maxw: 900px; } }
+@media (min-width: 700px) {
+  .dgrid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .fgrid { grid-template-columns: repeat(3, 1fr); }
+}
+/* iOS: no grey tap flash, no text pop-out, inputs big enough that Safari does not zoom in on them */
+html[data-plat="ios"] { -webkit-text-size-adjust: 100%; }
+html[data-plat="ios"] body { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
+html[data-plat="ios"] input, html[data-plat="ios"] textarea, html[data-plat="ios"] select { font-size: 16px; }
+html[data-plat="ios"] .rd-scroll, html[data-plat="ios"] .screen { overscroll-behavior: contain; }
+.syncbox { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; margin-top: 12px; }
+.syncbig { font: 800 34px/1.1 var(--fd); letter-spacing: .12em; text-align: center; color: var(--cyan); padding: 12px 0; user-select: all; -webkit-user-select: all; }
+.synclog { font: 500 13px/1.5 var(--fu); color: var(--muted); white-space: pre-wrap; min-height: 40px; }
